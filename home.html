@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kota Joe | Modern Street Food</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Kota Joe</h1>
+    <nav>
+      <a href="#home">Home</a> | 
+      <a href="#about">About Us</a> | 
+      <a href="#signin">Sign In</a> | 
+      <a href="#menu">Menu</a> | 
+      <a href="#order">Order Online</a> | 
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+   
+    <section id="home">
+
+    <h1>Welcome to Kota Joe</h1>
+
+    <p>
+        A modern twist on traditional street food!
+        Enjoy customizable kotas, loaded fries,
+        and signature shakes served fast and fresh.
+    </p>
+
+    <img src="images/kota-joe-banner.png.png"
+         alt="Kota Joe Signature Meals Spread">
+
+    <a href="#menu">Explore Our Menu</a>
+
+</section>
+
+    <hr>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We opened our first Kota Joe in Sunnyside Pretoria, marking the beginning of our exciting journey. Soon after this we opened Gandhi Square Johannesburg.
+      </p>
+
+     <article>
+    <h3>Kota Joe Edenvale</h3>
+
+    <picture>
+        <source media="(min-width: 600px)" srcset="images/edenvale-large.jpg">
+        <img src="images/Screenshot 2026-09-18 161547.png" alt="Kota Joe Edenvale Branch">
+    </picture>
+
+    <p>
+        Kota Joe Edenvale Roadhouse can be found...
+    </p>
+</article>
+
+<article class="branch-card">
+
+    <h3>Kota Joe Edenvale</h3>
+
+    <img src="images/Screenshot 2026-09-18 161547.png"
+         alt="Kota Joe Edenvale">
+
+    <p>
+        Kota Joe Edenvale Roadhouse can be found in the heart
+        of Edenvale town. Our first roadhouse where we took
+        the old roadhouse concept and brought in a new fresh
+        modern feel but still keeping the nostalgia with trays
+        on car windows, vibey music playing and entertainment
+        on big screens. Recently renovated in 2018.
+    </p>
+
+</article>
+
+    <hr>
+
+    <section id="signin">
+      <h2>Sign In</h2>
+      <form action="#" method="post">
+        <label for="signin-email">Email:</label>
+        <input type="text" id="signin-email" name="email"><br>
+        
+        <label for="signin-password">Password:</label>
+        <input type="password" id="signin-password" name="password"><br><br>
+        
+        <input type="submit" value="Sign In">
+      </form>
+
+      <h2>Register</h2>
+      <form action="#" method="post">
+        <label for="reg-name">Name:</label>
+        <input type="text" id="reg-name" name="name"><br>
+        
+        <label for="reg-surname">Surname:</label>
+        <input type="text" id="reg-surname" name="surname"><br>
+        
+        <label for="reg-email">Email:</label>
+        <input type="text" id="reg-email" name="email"><br>
+        
+        <label for="reg-password">Password:</label>
+        <input type="password" id="reg-password" name="password"><br><br>
+        
+        <input type="submit" value="Register">
+      </form>
+
+      <h3>Verification</h3>
+      <label>
+        <input type="checkbox" name="verify"> I verify my identity
+      </label>
+    </section>
+
+    <hr>
+
+   <section id="menu">
+
+    <h2>Menu</h2>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+
+            <img src="images/Blondie and milkshake.png" alt="Kota">
+
+            <h3>Blondie Kota & Milkshake</h3>
+
+            <p>R125.90</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+
+        <div class="menu-card">
+
+            <img src="images/loaded fries and cold drink.png" alt="Loaded Fries">
+
+            <h3>Cheesy Bacon Loaded Fries</h3>
+
+            <p>R81.90</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+
+        <div class="menu-card">
+
+            <img src="images/wings, onion rings and fries.png" alt="Wings and Fries">
+
+            <h3>Wings, Onion Rings & Fries</h3>
+
+            <p>R119.90</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+
+        <div class="menu-card">
+
+            <img src="images/blue berry krusher.png" alt="Krusher">
+
+            <h3>Blueberry Vanilla Krusher</h3>
+
+            <p>R61.90</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+      <h3>Continue</h3>
+      <label>
+        <input type="checkbox" name="agree"> I agree to Continue
+      </label>
+
+      <h3>Card Details</h3>
+      <form action="#" method="post">
+        <label for="card-holder">Card Holder Name:</label>
+        <input type="text" id="card-holder" name="card-holder"><br>
+        
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" maxlength="16"><br>
+        
+        <label for="expiry">Expiry Date:</label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/YY"><br>
+        
+        <label for="cvv">CVV:</label>
+        <input type="password" id="cvv" name="cvv" maxlength="3"><br><br>
+
+        <label for="verify-password">Password:</label>
+        <input type="password" id="verify-password" name="verify-password"><br>
+        <small>*enter sign in password to verify*</small><br><br>
+
+        <input type="submit" value="Order Online">
+        <input type="reset" value="Reset">
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? Reach out to us directly or follow us on social media!</p>
+      
+      <div class="contact-details">
+        <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> 079 687 2329</p>
+        <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> info@kotajoe.co.za</p>
+      </div>
+
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>Screw the diet</p>
+    <p>Contact us: 079 687 2329</p>
+  </footer>
+
+</body>
+</html>
