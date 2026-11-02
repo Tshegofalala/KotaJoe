@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kota Joe offers a modern twist on traditional street food with customizable kotas, loaded fries, and signature milkshakes.">
+  <meta name="keywords" content="Kota Joe, street food, kotas, loaded fries, roadhouse, fast food, Edenvale">
+  <title>Kota Joe | Modern Street Food</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+ 
+    <h1>Kota Joe</h1>
+
+    <div class="header-search" style="margin: 10px 0;">
+      <input type="text" id="site-search" placeholder="Search website content..." style="padding: 6px 12px; width: 60%; max-width: 250px; border-radius: 4px; border: 1px solid #333; background: #1e1e1e; color: #fff;" aria-label="Search website content">
+    </div>
+
+    <nav>
+      <a href="#home">Home</a> | 
+      <a href="#about">About Us</a> | 
+      <a href="#signin">Sign In</a> | 
+      <a href="#menu">Menu</a> | 
+      <a href="#order">Order Online</a> | 
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+
+    <section id="home">
+      <h2 class="welcome-title">Welcome to Kota Joe</h2>
+      <p>
+          A modern twist on traditional street food!
+          Enjoy customizable kotas, loaded fries,
+          and signature shakes served fast and fresh.
+      </p>
+      <img src="images/kota-joe-banner.png.png" alt="Kota Joe Signature Meals Spread showing a delicious variety of street food">
+      <a href="#menu" class="home-button">Explore Our Menu</a>
+    </section>
+
+    <hr>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We opened our first Kota Joe in Sunnyside Pretoria, marking the beginning of our exciting journey. Soon after this we opened Gandhi Square Johannesburg.
+      </p>
+
+      <article class="branch-card">
+        <h3>Kota Joe Edenvale</h3>
+        <picture>
+            <source media="(min-width: 600px)" srcset="images/edenvale-large.jpg">
+            <img src="images/Screenshot 2026-09-18 161547.png" alt="Kota Joe Edenvale Branch Exterior and Roadhouse Setup">
+        </picture>
+        <p>
+            Kota Joe Edenvale Roadhouse can be found in the heart
+            of Edenvale town. Our first roadhouse where we took
+            the old roadhouse concept and brought in a new fresh
+            modern feel but still keeping the nostalgia with trays
+            on car windows, vibey music playing and entertainment
+            on big screens. Recently renovated in 2018.
+        </p>
+      </article>
+    </section>
+
+    <hr>
+
+    <section id="signin">
+      <h2>Sign In</h2>
+      <form id="signin-form" action="#" method="post">
+        <label for="signin-email">Email:</label>
+        <input type="email" id="signin-email" name="email" required><br>
+        
+        <label for="signin-password">Password:</label>
+        <input type="password" id="signin-password" name="password" required><br><br>
+        
+        <input type="submit" value="Sign In">
+      </form>
+
+      <h2>Register</h2>
+      <form id="register-form" action="#" method="post">
+        <label for="reg-name">Name:</label>
+        <input type="text" id="reg-name" name="name" required><br>
+        
+        <label for="reg-surname">Surname:</label>
+        <input type="text" id="reg-surname" name="surname" required><br>
+        
+        <label for="reg-email">Email:</label>
+        <input type="email" id="reg-email" name="email" required><br>
+        
+        <label for="reg-password">Password:</label>
+        <input type="password" id="reg-password" name="password" required><br><br>
+        
+        <label>
+          <input type="checkbox" name="verify" id="verify-check"> I verify my identity
+        </label><br><br>
+        
+        <input type="submit" value="Register">
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="menu">
+      <h2>Menu</h2>
+
+      <div class="menu-search-engine" style="margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <input type="text" id="menu-search-input" placeholder="Search menu items (e.g., Kota, Fries)..." style="padding: 8px 12px; flex: 1; min-width: 200px; border-radius: 4px; border: 1px solid #333; background: #1e1e1e; color: #fff;" aria-label="Search menu items">
+          <select id="menu-sort-select" style="padding: 8px; border-radius: 4px; border: 1px solid #333; background: #1e1e1e; color: #fff;" aria-label="Sort menu items by price">
+              <option value="default">Sort By Price</option>
+              <option value="low-high">Price: Low to High</option>
+              <option value="high-low">Price: High to Low</option>
+          </select>
+      </div>
+
+      <div class="menu-container">
+          <div class="menu-card">
+              <img src="images/Blondie and milkshake.png" alt="Blondie Kota and Milkshake combo meal">
+              <h3>Blondie Kota & Milkshake</h3>
+              <p>R125.90</p>
+              <button>Add to Cart</button>
+          </div>
+          <div class="menu-card">
+              <img src="images/loaded fries and cold drink.png" alt="Cheesy Bacon Loaded Fries with cold drink">
+              <h3>Cheesy Bacon Loaded Fries</h3>
+              <p>R81.90</p>
+              <button>Add to Cart</button>
+          </div>
+          <div class="menu-card">
+              <img src="images/wings, onion rings and fries.png" alt="Wings, Onion Rings and Fries platter">
+              <h3>Wings, Onion Rings & Fries</h3>
+              <p>R119.90</p>
+              <button>Add to Cart</button>
+          </div>
+          <div class="menu-card">
+              <img src="images/blue berry krusher.png" alt="Blueberry Vanilla Krusher milkshake">
+              <h3>Blueberry Vanilla Krusher</h3>
+              <p>R61.90</p>
+              <button>Add to Cart</button>
+          </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="order">
+      <h2>Order Online & Payment</h2>
+      <h3>Continue</h3>
+      <label>
+        <input type="checkbox" name="agree" id="agree-check"> I agree to Continue
+      </label>
+
+      <h3>Card Details</h3>
+      <form id="order-form" action="#" method="post">
+        <label for="card-holder">Card Holder Name:</label>
+        <input type="text" id="card-holder" name="card-holder" required><br>
+        
+        <label for="card-number">Card Number (16 digits):</label>
+        <input type="text" id="card-number" name="card-number" maxlength="16" required><br>
+        
+        <label for="expiry">Expiry Date (MM/YY):</label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required><br>
+        
+        <label for="cvv">CVV (3 digits):</label>
+        <input type="password" id="cvv" name="cvv" maxlength="3" required><br><br>
+
+        <label for="verify-password">Password Verification:</label>
+        <input type="password" id="verify-password" name="verify-password" required><br>
+        <small>*enter sign in password to verify*</small><br><br>
+
+        <input type="submit" value="Order Online">
+        <input type="reset" value="Reset">
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? Reach out to us directly or follow us on social media!</p>
+      
+      <div class="contact-details">
+        <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> 079 687 2329</p>
+        <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> info@kotajoe.co.za</p>
+      </div>
+
+      <h3>Find Us Here</h3>
+      <div class="map-container" style="margin-bottom: 20px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.498421838634!2d28.1508!3d-26.1424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA4JzMyLjYiUyAyOMKwMDknMDIuOSJF!5e0!3m2!1sen!2sza!4v1650000000000!5m2!1sen!2sza" 
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius: 8px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Kota Joe Edenvale Map Location">
+        </iframe>
+      </div>
+
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+        <a href="https://wa.me/27796872329?text=Hi%20Kota%20Joe,%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" class="social-icon whatsapp" aria-label="WhatsApp" style="background-color: #25d366;">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>Screw the diet</p>
+    <p>Contact us: 079 687 2329</p>
+  </footer>
+
+  <a href="https://wa.me/27796872329?text=Hi%20Kota%20Joe,%20I%20would%20like%20to%20order." target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 12px 16px; border-radius: 50px; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 9999; text-decoration: none;" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="JavaScript/script.js"></script>
+</body>
+</html>
